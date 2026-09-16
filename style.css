@@ -119,3 +119,34 @@ nav a:hover, nav a.active {
   background: #2A2A2A;
   color: white;
 }
+/* เพิ่มสไตล์จัดการรูปภาพ */
+.img-responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ตกแต่งรูปในการ์ดผลงาน */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* สไตล์จัดเลย์เอาต์หน้า About ที่มีรูปคู่กับเนื้อหา */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
