@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio - ผลงาน</title>
+  <title>ผลงาน - My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,39 +11,40 @@
     <div class="logo">PORTFOLIO.</div>
     <nav>
       <ul>
-        <li><a href="index.html">หน้าแรก (Index)</a></li>
-        <li><a href="about.html">เกี่ยวกับฉัน (About)</a></li>
-        <li><a href="portfolio.html" class="active">ผลงาน (Portfolio)</a></li>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="about.html">เกี่ยวกับฉัน</a></li>
+        <li><a href="portfolio.html" class="active">ผลงาน</a></li>
       </ul>
     </nav>
-    <a href="contact.html" class="btn-contact">Contact Me</a>
+    <a href="contact.html" class="btn-pill">ติดต่อฉัน</a>
   </header>
 
-  <div class="container">
-    <h1>My Works</h1>
-    <p>ตัวอย่างโปรเจกต์ที่เคยทำ</p>
+  <main class="container">
+    <h1>My Works & Projects</h1>
+    <p style="color: var(--text-gray);">ตัวอย่างโปรเจกต์การออกแบบและพัฒนาที่ผ่านมา</p>
 
-    <div class="grid">
-      <!-- ตัวอย่างการ์ดผลงานพร้อมรูปภาพ -->
+    <div class="grid-2">
+      <!-- ผลงาน 1 -->
       <div class="card">
-        <img src="images/project1.jpg" alt="Project 1" class="card-img">
-        <h3>Project 1: Travel Tracker App</h3>
-        <p>ออกแบบ UI/UX แอปพลิเคชันติดตามการเดินทาง โทนสีครีม-ส้ม</p>
+        <img src="images/project-1.jpg" alt="Project 1 Image">
+        <h3>Travel Tracker App</h3>
+        <p>ดีไซน์แอปพลิเคชันสำหรับนักเดินทาง โทนสีครีมสดใส</p>
       </div>
 
+      <!-- ผลงาน 2 -->
       <div class="card">
-        <img src="images/project2.jpg" alt="Project 2" class="card-img">
-        <h3>Project 2: E-Commerce Web</h3>
-        <p>พัฒนาเว็บไซต์ร้านค้าออนไลน์ รองรับการแสดงผลทุกอุปกรณ์</p>
-      </div>
-
-      <div class="card">
-        <img src="images/project3.jpg" alt="Project 3" class="card-img">
-        <h3>Project 3: Dashboard Design</h3>
-        <p>ระบบจัดการหลังบ้านและสรุปรายงานข้อมูล</p>
+        <img src="images/project-2.jpg" alt="Project 2 Image">
+        <h3>E-Commerce Web Concept</h3>
+        <p>ออกแบบและพัฒนาหน้าร้านค้าออนไลน์ รองรับการสั่งซื้อผ่านมือถือ</p>
       </div>
     </div>
-  </div>
+
+    <!-- ปุ่มย้อนกลับ - ถัดไป -->
+    <div class="page-navigation">
+      <a href="about.html" class="page-btn">← ย้อนกลับ: เกี่ยวกับฉัน</a>
+      <a href="contact.html" class="page-btn">ถัดไป: ติดต่อฉัน →</a>
+    </div>
+  </main>
 
 </body>
 </html>
