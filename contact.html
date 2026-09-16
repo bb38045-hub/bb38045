@@ -1,45 +1,256 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Strawberry Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Contact — Irena Kim</title>
+
+  <link rel="stylesheet" href="styles.css">
+
 </head>
+
+
 <body>
-    <div class="card-container">
-        <navbar>
-            <div class="logo">Fruitopia</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html" class="active">Contact</a>
-            </div>
-        </navbar>
 
-        <div class="main-content">
-            <div class="text-section">
-                <h1>Contact <span>Me</span></h1>
-                <p class="subtitle">get in touch with me</p>
-                <p class="description">
-                    📍 <strong> Location:</strong> Bangkok, Thailand<br><br>
-                    📧 <strong> Email:</strong> myemail@example.com<br><br>
-                    🐙 <strong> GitHub:</strong> github.com/your-username<br><br>
-                    📞 <strong> Phone:</strong> 08X-XXX-XXXX
-                </p>
-                
-                <div class="btn-group">
-                    <a href="index.html" class="btn btn-primary">Back to Home</a>
-                </div>
-            </div>
 
-            <div class="image-section">
-                <div class="img-frame">
-                    <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=600&q=80" alt="Contact Image">
-                </div>
-            </div>
-        </div>
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        IRENA <span>✦</span> KIM.
+      </a>
+
+      <button class="menu-btn">
+        ☰
+      </button>
+
+      <div class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="portfolio.html">
+          Portfolio
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
     </div>
+
+  </nav>
+
+
+
+  <!-- CONTACT HERO -->
+
+  <header class="page-hero">
+
+    <div class="container">
+
+      <p class="small-title">
+        GET IN TOUCH
+      </p>
+
+      <h1>
+        LET'S<br>
+        CONNECT.
+      </h1>
+
+      <p class="page-description">
+        Tell me what you're dreaming up —
+        I'd love to help bring it to life.
+      </p>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- CONTACT -->
+
+  <section class="section connect">
+
+    <div class="container contact-grid">
+
+
+      <!-- INFORMATION -->
+
+      <div>
+
+        <p class="small-title">
+          SAY HELLO
+        </p>
+
+        <h2>
+          HAVE AN<br>
+          IDEA?
+        </h2>
+
+        <p>
+          Whether you have a fully formed idea
+          or just a little spark, send me a message.
+        </p>
+
+
+        <div class="contact-details">
+
+          <div>
+
+            <strong>
+              EMAIL
+            </strong>
+
+            <a href="mailto:hello@irenakim.design">
+              hello@irenakim.design
+            </a>
+
+          </div>
+
+
+          <div>
+
+            <strong>
+              INSTAGRAM
+            </strong>
+
+            <a href="#">
+              @irenakim.design
+            </a>
+
+          </div>
+
+
+          <div>
+
+            <strong>
+              LOCATION
+            </strong>
+
+            <span>
+              Thailand · Worldwide
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FORM -->
+
+      <form
+        id="contact-form"
+        class="contact-form"
+      >
+
+        <h3>
+          START A PROJECT
+        </h3>
+
+
+        <label for="name">
+          Name
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        >
+
+
+        <label for="email">
+          Email
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@email.com"
+          required
+        >
+
+
+        <label for="message">
+          Message
+        </label>
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tell me about your project..."
+          required
+        ></textarea>
+
+
+        <button
+          type="submit"
+          class="button"
+        >
+          Send Message →
+        </button>
+
+
+        <p
+          id="form-message"
+          class="form-message"
+        ></p>
+
+      </form>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <span>
+        © 2026 Irena Kim
+      </span>
+
+      <a href="portfolio.html">
+        See portfolio →
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>
