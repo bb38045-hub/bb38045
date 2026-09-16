@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffdce5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ตัวการ์ดตรงกลาง */
+.card-container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 950px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    padding: 30px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4b72;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff4b72;
+    font-weight: bold;
+}
+
+/* Content Area */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    min-height: 360px;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.text-section h1 {
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.text-section h1 span {
+    color: #ff4b72;
+}
+
+.text-section p.subtitle {
+    font-size: 16px;
+    color: #ff7b95;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.text-section p.description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* ปุ่มกด */
+.btn-group .btn {
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff4b72, #ff7b95);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 75, 114, 0.4);
+}
+
+.btn-secondary {
+    border: 1.5px solid #ff4b72 !important;
+    color: #ff4b72;
+    background: transparent;
+}
+
+/* รูปภาพฝั่งขวา */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-frame {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    border: 8px solid #fff;
+}
+
+.img-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ตารางแสดงผลงานในหน้า Portfolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.portfolio-item {
+    background: #fff0f3;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ffd2dc;
+}
+
+.portfolio-item h3 {
+    font-size: 16px;
+    color: #ff4b72;
+    margin-bottom: 5px;
+}
+
+.portfolio-item p {
+    font-size: 12px;
+    color: #666;
+}
