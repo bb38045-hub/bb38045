@@ -1,46 +1,52 @@
-/* กำหนดโทนสีและฟอนต์ตามสไตล์ภาพตัวอย่าง */
+/* ==========================================
+   COLOR PALETTE & BASIC CONFIG
+   ========================================== */
 :root {
-  --bg-color: #F8F5EE;        /* สีพื้นหลังโทนครีม */
-  --text-dark: #1A1A1A;       /* สีข้อความดำ */
-  --accent-orange: #F39C12;   /* สีส้มปุ่มกด/ไฮไลท์ */
-  --card-bg: #FFFFFF;         /* สีพื้นหลังการ์ด */
-  --dark-bg: #1A1A1A;         /* โซนสีดำ */
+  --bg-cream: #F5F2EB;        /* สีครีมพื้นหลังหลัก */
+  --bg-card: #FFFFFF;         /* สีขาวการ์ด */
+  --bg-dark: #1C1C1E;         /* สีดำ Section ล่าง */
+  --text-dark: #111111;       /* สีตัวอักษรดำ */
+  --text-gray: #666666;       /* สีตัวอักษรเทา */
+  --accent-orange: #F2994A;   /* สีส้มปุ่มกด/ไฮไลท์ */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-cream);
   color: var(--text-dark);
   line-height: 1.6;
 }
 
-/* Header & Navigation Bar (ใช้เชื่อมโยงไปหน้าต่างๆ) */
+/* ==========================================
+   NAVIGATION BAR (ด้านบน)
+   ========================================== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 8%;
-  background-color: var(--bg-color);
+  padding: 20px 8%;
+  background-color: var(--bg-cream);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 25px;
 }
 
 nav a {
@@ -48,7 +54,6 @@ nav a {
   color: var(--text-dark);
   font-weight: 600;
   font-size: 14px;
-  text-transform: uppercase;
   transition: color 0.3s;
 }
 
@@ -56,97 +61,125 @@ nav a:hover, nav a.active {
   color: var(--accent-orange);
 }
 
-.btn-contact {
+.btn-pill {
   background-color: var(--accent-orange);
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 10px 24px;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  transition: opacity 0.3s;
 }
 
-/* Layout ทั่วไป */
+.btn-pill:hover {
+  opacity: 0.85;
+}
+
+/* ==========================================
+   LAYOUT & CONTAINERS
+   ========================================== */
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 40px 20px 80px;
 }
 
-/* สไตล์ Hero Section หน้าแรก */
-.hero {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.hero h1 {
-  font-size: 56px;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  color: #666;
-  max-width: 600px;
-  margin: 0 auto 30px;
-}
-
-/* สไตล์การ์ดผลงาน / เนื้อหา */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.card {
-  background: var(--card-bg);
-  padding: 30px;
+/* ภาพประกอบ */
+.img-box {
+  width: 100%;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  margin: 25px 0;
 }
 
-/* Section สีดำคล้ายภาพตัวอย่าง */
-.dark-section {
-  background-color: var(--dark-bg);
-  color: white;
-  padding: 60px 20px;
-  border-radius: 20px;
-  margin-top: 60px;
-}
-
-.dark-section .card {
-  background: #2A2A2A;
-  color: white;
-}
-/* เพิ่มสไตล์จัดการรูปภาพ */
-.img-responsive {
+.img-box img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  display: block;
   object-fit: cover;
 }
 
-/* ตกแต่งรูปในการ์ดผลงาน */
-.card-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-/* สไตล์จัดเลย์เอาต์หน้า About ที่มีรูปคู่กับเนื้อหา */
-.about-grid {
+/* การ์ดคอนเทนต์แบบ Grid */
+.grid-2 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
   margin-top: 30px;
 }
 
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
+.card {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* SECTION สีดำคล้ายภาพตัวอย่าง */
+.dark-section {
+  background-color: var(--bg-dark);
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.dark-section h2 {
+  margin-bottom: 15px;
+}
+
+.dark-section .card {
+  background: #2C2C2E;
+  color: #fff;
+}
+
+.dark-section p {
+  color: #AAA;
+}
+
+/* ==========================================
+   PAGINATION BUTTONS (ปุ่มย้อนกลับ - ถัดไป)
+   ========================================== */
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 30px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.page-btn:hover {
+  background-color: var(--accent-orange);
+  color: #fff;
+  border-color: var(--accent-orange);
+}
+
+.page-btn.disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
