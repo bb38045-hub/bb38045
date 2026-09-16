@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - หน้าแรก</title>
+  <title>หน้าแรก - My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,40 +11,45 @@
     <div class="logo">PORTFOLIO.</div>
     <nav>
       <ul>
-        <li><a href="index.html" class="active">หน้าแรก (Index)</a></li>
-        <li><a href="about.html">เกี่ยวกับฉัน (About)</a></li>
-        <li><a href="portfolio.html">ผลงาน (Portfolio)</a></li>
+        <li><a href="index.html" class="active">หน้าแรก</a></li>
+        <li><a href="about.html">เกี่ยวกับฉัน</a></li>
+        <li><a href="portfolio.html">ผลงาน</a></li>
       </ul>
     </nav>
-    <a href="contact.html" class="btn-contact">Contact Me</a>
+    <a href="contact.html" class="btn-pill">ติดต่อฉัน</a>
   </header>
 
-  <div class="container hero">
-    <h1>Creative Developer & Designer</h1>
-    <p>ยินดีต้อนรับสู่พอร์ตโฟลิโอออนไลน์ของฉัน รวบรวมผลงานการออกแบบและการพัฒนาเว็บไซต์</p>
-    
-    <!-- ใส่รูป Banner ตรงกลางหน้าแรก -->
-    <img src="images/hero-banner.jpg" alt="Hero Banner" class="img-responsive" style="max-height: 400px; margin: 20px 0 40px;">
+  <main class="container">
+    <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+      <h1 style="font-size: 48px; line-height: 1.2;">Welcome to My Creative Space</h1>
+      <p style="color: var(--text-gray); margin-top: 15px;">ยินดีต้อนรับสู่พอร์ตโฟลิโอออนไลน์ นำเสนอผลงานการออกแบบ UI/UX และการพัฒนาเว็บไซต์</p>
+    </div>
 
-    <a href="portfolio.html" class="btn-contact">ดูผลงานทั้งหมด</a>
-  </div>
+    <!-- ใส่รูปใหญ่ตรงกลางหน้าแรก -->
+    <div class="img-box">
+      <img src="images/index-hero.jpg" alt="Hero Image (หรือใส่ URL รูปตรงนี้ได้)">
+    </div>
 
-  <div class="container dark-section">
-    <h2>บริการ / สิ่งที่เชี่ยวชาญ</h2>
-    <div class="grid">
-      <div class="card">
-        <!-- ใส่รูปใน Card หน้าแรก -->
-        <img src="images/web-design.jpg" alt="Web Design" class="card-img">
-        <h3>Web Design</h3>
-        <p>ออกแบบเว็บไซต์โทน มินิมอล โมเดิร์น รองรับทุกหน้าจอ</p>
-      </div>
-      <div class="card">
-        <img src="images/frontend-dev.jpg" alt="Frontend Dev" class="card-img">
-        <h3>Frontend Dev</h3>
-        <p>พัฒนาเว็บไซต์ด้วย HTML, CSS, JavaScript</p>
+    <div class="dark-section">
+      <h2>สิ่งที่เชี่ยวชาญ (Highlights)</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p>ออกแบบหน้าตาเว็บไซต์และแอปพลิเคชัน โทนสีมินิมอล ใช้งานง่าย</p>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>เขียนโค้ดพัฒนาเว็บไซต์ด้วย HTML, CSS, JavaScript และรองรับมือถือ</p>
+        </div>
       </div>
     </div>
-  </div>
+
+    <!-- ปุ่มย้อนกลับ - ถัดไป -->
+    <div class="page-navigation">
+      <a href="#" class="page-btn disabled">← ย้อนกลับ (ไม่มี)</a>
+      <a href="about.html" class="page-btn">ถัดไป: เกี่ยวกับฉัน →</a>
+    </div>
+  </main>
 
 </body>
 </html>
