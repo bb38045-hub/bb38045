@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>About Me - เกี่ยวกับฉัน</title>
+  <title>เกี่ยวกับฉัน - My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,41 +11,40 @@
     <div class="logo">PORTFOLIO.</div>
     <nav>
       <ul>
-        <li><a href="index.html">หน้าแรก (Index)</a></li>
-        <li><a href="about.html" class="active">เกี่ยวกับฉัน (About)</a></li>
-        <li><a href="portfolio.html">ผลงาน (Portfolio)</a></li>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="about.html" class="active">เกี่ยวกับฉัน</a></li>
+        <li><a href="portfolio.html">ผลงาน</a></li>
       </ul>
     </nav>
-    <a href="contact.html" class="btn-contact">Contact Me</a>
+    <a href="contact.html" class="btn-pill">ติดต่อฉัน</a>
   </header>
 
-  <div class="container">
+  <main class="container">
     <h1>About Me</h1>
-    
-    <!-- เลย์เอาต์แบ่ง 2 ฝั่ง (ฝั่งรูปโปรไฟล์ + ฝั่งรายละเอียด) -->
-    <div class="about-grid">
-      <div>
-        <img src="images/profile.jpg" alt="Profile Picture" class="img-responsive">
+    <p style="color: var(--text-gray);">ทำความรู้จักกับฉัน ประวัติ และทักษะการทำงาน</p>
+
+    <!-- ใส่รูปโปรไฟล์/แนะนำตัว -->
+    <div class="img-box" style="max-height: 350px;">
+      <img src="images/about-me.jpg" alt="Profile Image">
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>ประวัติโดยย่อ</h3>
+        <p>ฉันคือนักพัฒนาเว็บไซต์ที่หลงใหลการสร้างสรรค์ผลงานที่เรียบง่ายและดูทันสมัย เน้นการทำความเข้าใจผู้ใช้งานเป็นหลัก</p>
       </div>
-      <div>
-        <h2>สวัสดีครับ/ค่ะ!</h2>
-        <p style="margin-top: 15px;">ฉันเป็นนักพัฒนาเว็บไซต์ที่ชื่นชอบการออกแบบสไตล์คลีน มินิมอล เข้าใจง่าย มีความหลงใหลในการสร้างประสบการณ์ผู้ใช้งาน (UX/UI) ที่ดี</p>
+      <div class="card">
+        <h3>ทักษะทางเทคนิค (Skills)</h3>
+        <p>• HTML5 / CSS3 / JavaScript<br>• UI/UX Web Design<br>• Git & GitHub Deployment</p>
       </div>
     </div>
 
-    <div class="grid" style="margin-top: 40px;">
-      <div class="card">
-        <img src="images/skills.jpg" alt="Skills" class="card-img">
-        <h3>ทักษะ (Skills)</h3>
-        <p>HTML / CSS / JavaScript / Git & GitHub</p>
-      </div>
-      <div class="card">
-        <img src="images/education.jpg" alt="Education" class="card-img">
-        <h3>ประวัติการศึกษา</h3>
-        <p>สาขาวิทยาการคอมพิวเตอร์ / เทคโนโลยีสารสนเทศ</p>
-      </div>
+    <!-- ปุ่มย้อนกลับ - ถัดไป -->
+    <div class="page-navigation">
+      <a href="index.html" class="page-btn">← ย้อนกลับ: หน้าแรก</a>
+      <a href="portfolio.html" class="page-btn">ถัดไป: ผลงาน →</a>
     </div>
-  </div>
+  </main>
 
 </body>
 </html>
