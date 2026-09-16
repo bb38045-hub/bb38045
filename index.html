@@ -1,41 +1,458 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Strawberry Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Irena Kim — Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="card-container">
-        <navbar>
-            <div class="logo">Fruitopia</div>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </navbar>
 
-        <div class="main-content">
-            <div class="text-section">
-                <h1>Straw<span>berries</span></h1>
-                <p class="subtitle">always fills your heart with joy</p>
-                <p class="description">ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน รวมรวบผลงาน ความสนใจ และช่องทางการติดต่อไว้ครบถ้วน สามารถกดดูส่วนต่างๆ จากเมนูด้านบนได้เลยครับ</p>
-                
-                <div class="btn-group">
-                    <a href="portfolio.html" class="btn btn-primary">View Works</a>
-                    <a href="contact.html" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
 
-            <div class="image-section">
-                <div class="img-frame">
-                    <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80" alt="Home Image">
-                </div>
-            </div>
-        </div>
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        IRENA <span>✦</span> KIM.
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu">
+        ☰
+      </button>
+
+      <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
     </div>
+
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="container hero-grid">
+
+      <div class="hero-text">
+
+        <p class="small-title">
+          FREELANCE DESIGNER
+        </p>
+
+        <h1>
+          HI, I'M<br>
+          IRENA KIM.
+        </h1>
+
+        <p class="hero-description">
+          A freelance designer who brings bright ideas to life with
+          <strong>playful, purposeful visuals.</strong>
+        </p>
+
+        <a href="portfolio.html" class="button">
+          Explore my work →
+        </a>
+
+      </div>
+
+
+      <!-- Abstract visual -->
+      <div class="hero-art">
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <div class="hero-word">
+          PLAYFUL<br>
+          VISUALS
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ABOUT PREVIEW -->
+  <section class="section about-preview">
+
+    <div class="container split">
+
+      <div class="quote-box">
+
+        <p class="big-quote">
+          “Design should spark joy,
+          solve problems, and feel
+          like you.”
+        </p>
+
+      </div>
+
+
+      <div class="about-text">
+
+        <p class="small-title">
+          MY STORY
+        </p>
+
+        <h2>
+          MY JOURNEY<br>
+          INTO DESIGN
+        </h2>
+
+        <p>
+          I started as a doodle-obsessed kid and somehow turned that
+          into a design career. Today, I help brands express who they
+          are through clean lines, bold colors, and a whole lot of heart.
+        </p>
+
+        <a href="about.html" class="text-link">
+          Read my story →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="section services">
+
+    <div class="container">
+
+      <div class="services-grid">
+
+        <div>
+
+          <p class="small-title">
+            SERVICES
+          </p>
+
+          <h2>
+            WHAT I CAN<br>
+            DO FOR YOU
+          </h2>
+
+        </div>
+
+
+        <div class="service-list">
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ◒
+            </div>
+
+            <div>
+              <h3>Brand Identity</h3>
+
+              <p>
+                Crafting logos and visual systems
+                that feel instantly “you.”
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ◉
+            </div>
+
+            <div>
+              <h3>Social Media Design</h3>
+
+              <p>
+                Scroll-stopping graphics that
+                keep your audience hooked.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ▣
+            </div>
+
+            <div>
+              <h3>Web Layouts</h3>
+
+              <p>
+                Clean, memorable page designs
+                that make browsing a breeze.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURED WORK -->
+  <section class="section featured">
+
+    <div class="container">
+
+      <p class="small-title">
+        SELECTED WORK
+      </p>
+
+      <h2>
+        WINS I'M PROUD OF
+      </h2>
+
+
+      <div class="project-grid">
+
+
+        <article class="project-card">
+
+          <div class="project-image project-one">
+            <span>PROJECT 01</span>
+          </div>
+
+          <div class="project-content">
+
+            <h3>
+              20+ Brand Kits
+            </h3>
+
+            <p>
+              Helping small businesses grow
+              with cohesive branding.
+            </p>
+
+            <a href="portfolio.html#brand" class="button small">
+              View Project
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-card">
+
+          <div class="project-image project-two">
+            <span>PROJECT 02</span>
+          </div>
+
+          <div class="project-content">
+
+            <h3>
+              Young Designer Spotlight
+            </h3>
+
+            <p>
+              A visual storytelling campaign
+              for creative talent.
+            </p>
+
+            <a href="portfolio.html#spotlight" class="button small">
+              View Project
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-card">
+
+          <div class="project-image project-three">
+            <span>PROJECT 03</span>
+          </div>
+
+          <div class="project-content">
+
+            <h3>
+              50+ Creator Designs
+            </h3>
+
+            <p>
+              Personalized content systems
+              for online creators.
+            </p>
+
+            <a href="portfolio.html#creators" class="button small">
+              View Project
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+
+    <div class="container">
+
+      <h2 class="center-title">
+        TESTIMONIALS
+      </h2>
+
+
+      <div class="testimonial-grid">
+
+
+        <div class="testimonial">
+
+          <div class="fake-photo photo-one">
+            ✦
+          </div>
+
+          <p>
+            “Working with Irena felt like
+            collaborating with a friend who
+            gets it. My brand looks amazing!”
+          </p>
+
+          <strong>
+            Nyle Alcott
+          </strong>
+
+          <small>
+            Online Creator
+          </small>
+
+        </div>
+
+
+        <div class="testimonial green">
+
+          <div class="fake-photo photo-two">
+            ✦
+          </div>
+
+          <p>
+            “Irena’s eye for color is magic.
+            She turned my messy ideas into
+            something beautiful and true.”
+          </p>
+
+          <strong>
+            Sarina Gwan
+          </strong>
+
+          <small>
+            Business Owner
+          </small>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="section connect">
+
+    <div class="container connect-grid">
+
+      <div>
+
+        <h2>
+          LET'S<br>
+          CONNECT
+        </h2>
+
+        <p>
+          Tell me what you're dreaming up —
+          I'd love to help you bring it to life.
+        </p>
+
+        <div class="contact-info">
+
+          <strong>Email:</strong>
+          hello@irenakim.design
+
+          <br>
+
+          <strong>Instagram:</strong>
+          @irenakim.design
+
+        </div>
+
+      </div>
+
+
+      <div class="mini-contact">
+
+        <h3>
+          HAVE A PROJECT?
+        </h3>
+
+        <p>
+          Let's make something bright.
+        </p>
+
+        <a href="contact.html" class="button">
+          Contact Me →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <span>
+        © 2026 Irena Kim
+      </span>
+
+      <span>
+        Playful design, purposeful ideas.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
 </body>
 </html>
