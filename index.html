@@ -1,3 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Minimal Pink & Blue</title>
+    <style>
+        /* 🎨 โค้ดธีมสีชมพู-ฟ้า มินิมอล */
+        :root {
+            --bg-primary: #ffffff;
+            --bg-canvas: #fff5f7; /* พื้นหลังสีชมพูอ่อนมากๆ */
+            --border-color: #fee2e2;
+            --text-primary: #334155;
+            --text-secondary: #64748b;
+            
+            /* Pink & Blue Accents */
+            --accent-blue: #38bdf8;        /* ฟ้า */
+            --accent-blue-light: #e0f2fe;  /* ฟ้าอ่อน */
+            --accent-pink: #f472b6;        /* ชมพู */
+            --accent-pink-light: #fce7f3;  /* ชมพูอ่อน */
+        }
+
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* กล่องข้อความหลักสไตล์ GitHub */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            border-bottom: 2px solid var(--accent-pink-light);
+            padding-bottom: 12px;
+            margin-top: 0;
+            color: #db2777; /* หัวข้อสีชมพูเข้ม */
+        }
+
+        p {
+            color: var(--text-secondary);
+        }
+
+        /* ลิงก์สีฟ้า พอเอาเมาส์ชี้จะเป็นสีชมพู */
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+
+        /* ปุ่มสีฟ้า */
+        .btn-blue {
+            background-color: var(--accent-blue);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .btn-blue:hover {
+            background-color: #0ea5e9;
+        }
+
+        /* ปุ่มสีชมพู */
+        .btn-pink {
+            background-color: var(--accent-pink-light);
+            color: #db2777;
+            border: 1px solid var(--accent-pink);
+            border-radius: 6px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        .btn-pink:hover {
+            background-color: var(--accent-pink);
+            color: white;
+        }
+
+        /* โค้ดและป้ายกำกับ (Badge) */
+        code {
+            background-color: var(--accent-pink-light);
+            color: #db2777;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 2em;
+            background-color: var(--accent-blue-light);
+            color: #0369a1;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🏗️ โครงสร้างเนื้อหาเว็บ (HTML) -->
+    <div class="container">
+        <span class="badge">GitHub Theme</span>
+        <h1>สวัสดีครับ! นี่คือธีมมินิมอล ชมพู-ฟ้า</h1>
+        
+        <p>ตัวอักษรทั่วไปจะเป็นสีเทาเข้มเพื่อให้สบายตา ลองเอาเมาส์ไปชี้ที่ <a href="#">ลิงก์สีฟ้านี้ดูสิครับ</a> มันจะเปลี่ยนเป็นสีชมพูพาสเทลตามที่คุณต้องการ</p>
+        
+        <p>สำหรับคำสั่งโปรแกรมหรือข้อความเน้นย้ำ จะถูกครอบด้วยแท็กไฮไลท์สีชมพูแบบนี้ <code>style.css</code></p>
+        
+        <div style="margin-top: 24px;">
+            <button class="btn-blue">ปุ่มกดสีฟ้า</button>
+            <button class="btn-pink">ปุ่มกดสีชมพู</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
 <h1 align="center">🌸 ประวัติส่วนตัว & แก๊งเพื่อน 🌸</h1>
 <p align="center">🏠 <a href="./README.md">กลับสู่หน้าแรก</a></p>
 
