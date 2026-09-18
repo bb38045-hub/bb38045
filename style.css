@@ -1091,3 +1091,330 @@ body {
     }
 
 }
+/* =================================
+   PORTFOLIO WORKS
+================================= */
+
+.works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+
+/* กล่องผลงาน */
+
+.portfolio-work {
+
+    background: rgba(255,255,255,.85);
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 15px 40px rgba(120,160,180,.10);
+
+    border: 1px solid rgba(210,225,235,.5);
+
+    transition: .4s ease;
+
+    animation: slideUp .8s ease;
+}
+
+
+.portfolio-work:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 22px 45px rgba(120,160,180,.15);
+}
+
+
+/* หัวข้อ */
+
+.work-header {
+
+    margin-bottom: 25px;
+}
+
+
+.work-header h2 {
+
+    color: #66879a;
+
+    font-size: 27px;
+
+    margin-top: 12px;
+}
+
+
+.work-date {
+
+    color: #9aa8b3;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+
+/* Tag */
+
+.tag {
+
+    display: inline-block;
+
+    background: #e1f5ff;
+
+    color: #6ba3bc;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+.tag.pink {
+
+    background: #ffe4ef;
+
+    color: #dc98b4;
+}
+
+
+/* =================================
+   รูปกิจกรรม
+================================= */
+
+.activity-images {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.activity-images img {
+
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: .4s ease;
+}
+
+
+.activity-images img:hover {
+
+    transform: scale(1.02);
+
+    box-shadow:
+        0 10px 25px rgba(120,160,180,.18);
+}
+
+
+/* =================================
+   เกียรติบัตร
+================================= */
+
+.certificate-box {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4fbff,
+            #fff5f9
+        );
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+.certificate-box h3 {
+
+    color: #6d91a4;
+
+    margin-bottom: 18px;
+}
+
+
+.certificate-box img {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    max-height: 500px;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(120,160,180,.12);
+
+    transition: .4s ease;
+}
+
+
+.certificate-box img:hover {
+
+    transform: scale(1.02);
+}
+
+
+/* =================================
+   รายละเอียด
+================================= */
+
+.work-description {
+
+    background: #fffafd;
+
+    border-left: 4px solid #efaac2;
+
+    padding: 20px 25px;
+
+    border-radius: 0 20px 20px 0;
+}
+
+
+.work-description h3 {
+
+    color: #6e9bb0;
+
+    margin-bottom: 8px;
+}
+
+
+.work-description p {
+
+    color: #7f8f9c;
+
+    line-height: 1.9;
+
+    font-size: 15px;
+}
+
+
+/* =================================
+   Animation ตอนเลื่อน
+================================= */
+
+.portfolio-work {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    animation:
+        workAppear .8s ease forwards;
+}
+
+
+.portfolio-work:nth-child(1) {
+    animation-delay: .1s;
+}
+
+.portfolio-work:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.portfolio-work:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.portfolio-work:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.portfolio-work:nth-child(5) {
+    animation-delay: .5s;
+}
+
+
+@keyframes workAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(35px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =================================
+   มือถือ
+================================= */
+
+@media (max-width: 700px) {
+
+    .portfolio-work {
+
+        padding: 22px;
+
+        border-radius: 25px;
+
+    }
+
+
+    .work-header h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .activity-images {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .activity-images img {
+
+        height: 230px;
+
+    }
+
+
+    .certificate-box {
+
+        padding: 15px;
+
+    }
+
+}
