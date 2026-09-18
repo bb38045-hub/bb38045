@@ -1074,3 +1074,20 @@ body {
     }
 
 }
+.page-exit {
+    animation: pageExit .35s ease forwards;
+}
+
+@keyframes pageExit {
+
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+}
