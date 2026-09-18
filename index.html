@@ -3,219 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Minimal Pink & Blue</title>
-    <style>
-        /* 🎨 โค้ดธีมสีชมพู-ฟ้า มินิมอล */
-        :root {
-            --bg-primary: #ffffff;
-            --bg-canvas: #fff5f7; /* พื้นหลังสีชมพูอ่อนมากๆ */
-            --border-color: #fee2e2;
-            --text-primary: #334155;
-            --text-secondary: #64748b;
-            
-            /* Pink & Blue Accents */
-            --accent-blue: #38bdf8;        /* ฟ้า */
-            --accent-blue-light: #e0f2fe;  /* ฟ้าอ่อน */
-            --accent-pink: #f472b6;        /* ชมพู */
-            --accent-pink-light: #fce7f3;  /* ชมพูอ่อน */
-        }
 
-        body {
-            background-color: var(--bg-canvas);
-            color: var(--text-primary);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.5;
-            margin: 0;
-            padding: 40px 20px;
-        }
+    <title>My Portfolio</title>
 
-        /* กล่องข้อความหลักสไตล์ GitHub */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--bg-primary);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 32px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
-        }
+    <link rel="stylesheet" href="style.css">
 
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            border-bottom: 2px solid var(--accent-pink-light);
-            padding-bottom: 12px;
-            margin-top: 0;
-            color: #db2777; /* หัวข้อสีชมพูเข้ม */
-        }
-
-        p {
-            color: var(--text-secondary);
-        }
-
-        /* ลิงก์สีฟ้า พอเอาเมาส์ชี้จะเป็นสีชมพู */
-        a {
-            color: var(--accent-blue);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            color: var(--accent-pink);
-            text-decoration: underline;
-        }
-
-        /* ปุ่มสีฟ้า */
-        .btn-blue {
-            background-color: var(--accent-blue);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            padding: 6px 16px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-        }
-        .btn-blue:hover {
-            background-color: #0ea5e9;
-        }
-
-        /* ปุ่มสีชมพู */
-        .btn-pink {
-            background-color: var(--accent-pink-light);
-            color: #db2777;
-            border: 1px solid var(--accent-pink);
-            border-radius: 6px;
-            padding: 6px 16px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            margin-left: 8px;
-        }
-        .btn-pink:hover {
-            background-color: var(--accent-pink);
-            color: white;
-        }
-
-        /* โค้ดและป้ายกำกับ (Badge) */
-        code {
-            background-color: var(--accent-pink-light);
-            color: #db2777;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 2px 8px;
-            font-size: 12px;
-            font-weight: 500;
-            border-radius: 2em;
-            background-color: var(--accent-blue-light);
-            color: #0369a1;
-            margin-bottom: 16px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- 🏗️ โครงสร้างเนื้อหาเว็บ (HTML) -->
-    <div class="container">
-        <span class="badge">GitHub Theme</span>
-        <h1>สวัสดีครับ! นี่คือธีมมินิมอล ชมพู-ฟ้า</h1>
-        
-        <p>ตัวอักษรทั่วไปจะเป็นสีเทาเข้มเพื่อให้สบายตา ลองเอาเมาส์ไปชี้ที่ <a href="#">ลิงก์สีฟ้านี้ดูสิครับ</a> มันจะเปลี่ยนเป็นสีชมพูพาสเทลตามที่คุณต้องการ</p>
-        
-        <p>สำหรับคำสั่งโปรแกรมหรือข้อความเน้นย้ำ จะถูกครอบด้วยแท็กไฮไลท์สีชมพูแบบนี้ <code>style.css</code></p>
-        
-        <div style="margin-top: 24px;">
-            <button class="btn-blue">ปุ่มกดสีฟ้า</button>
-            <button class="btn-pink">ปุ่มกดสีชมพู</button>
-        </div>
-    </div>
+    <!-- Loading -->
+    <div class="page-loader"></div>
 
-</body>
-</html>
-
-<h1 align="center">🌸 ประวัติส่วนตัว & แก๊งเพื่อน 🌸</h1>
-<p align="center">🏠 <a href="./README.md">กลับสู่หน้าแรก</a></p>
-
----
-
-## 🦄 ประวัติของผม (About Me)
-<p align="center">
-  <img src="https://shields.ioื่อ--นามสกุล-[ใส่ชื่อของคุณ]-ffb6c1?style=flat" />
-  <img src="https://shields.ioื่อเล่น-[ใส่ชื่อเล่น]-ffb6c1?style=flat" />
-  <img src="https://shields.ioุ-[ใส่อายุ]-ffb6c1?style=flat" />
-</p>
-
-- 🏫 **การศึกษา:** [ใส่สถานศึกษา / คณะ / สาขา]
-- 🎨 **งานอดิเรก:** [เช่น วาดรูป, เล่นเกม, ดูหนัง, ฟังเพลง]
-- 💡 **เป้าหมายในอนาคต:** [เช่น อยากเป็น Full-stack Developer, อยากสร้างสตาร์ทอัพ]
-
----
-
-## 👯‍♂️ ทำความรู้จักกับเพื่อนๆ ของผม (My Friends)
-
-*คลิกที่ชื่อหรือไอคอน GitHub ของเพื่อนเพื่อแวะไปทักทายได้นะ!*
-
-| เพื่อนคนที่ 1 🎀 | เพื่อนคนที่ 2 🌟 | เพื่อนคนที่ 3 🧸 |
-| :---: | :---: | :---: |
-| <img src="https://github.comื่อยูสเซอร์เพื่อนคนแรก.png" width="100px;" alt=""/><br />**[ชื่อเพื่อนคนแรก]** | <img src="https://github.comื่อยูสเซอร์เพื่อนคนที่สอง.png" width="100px;" alt=""/><br />**[ชื่อเพื่อนคนที่สอง]** | <img src="https://github.comื่อยูสเซอร์เพื่อนคนที่สาม.png" width="100px;" alt=""/><br />**[ชื่อเพื่อนคนที่สาม]** |
-| [คำอธิบายสั้นๆ เช่น สายโค้ดสุดโหด] | [คำอธิบายสั้นๆ เช่น ดีไซเนอร์ประจำกลุ่ม] | [คำอธิบายสั้นๆ เช่น ฝ่ายซัพพอร์ตอารมณ์ดี] |
-| [🔗 GitHub](https://github.comื่อยูสเซอร์เพื่อนคนแรก) | [🔗 GitHub](https://github.comื่อยูสเซอร์เพื่อนคนที่สอง) | [🔗 GitHub](https://github.comื่อยูสเซอร์เพื่อนคนที่สาม) |
-
----
-
-<p align="center">✨ พัฒนาด้วยความตั้งใจ ขอบคุณที่แวะเข้ามาอ่านนะครับ ✨</p><!DOCTYPE html>
-<html lang="th">
-<head>
-  <meta charset="UTF-8">
-  <title>หน้าแรก - My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header>
-    <div class="logo">PORTFOLIO.</div>
+    <!-- Navbar -->
     <nav>
-      <ul>
-        <li><a href="index.html" class="active">หน้าแรก</a></li>
-        <li><a href="about.html">เกี่ยวกับ</a></li>
-        <li><a href="portfolio.html">ผลงาน</a></li>
-      </ul>
-    </nav>
-    <a href="contact.html" class="btn-pill">ติดต่อ</a>
-  </header>
+        <div class="logo">My Portfolio ♡</div>
 
-  <main class="container">
-    <div style="text-align: center; max-width: 700px; margin: 0 auto;">
-      <h1 style="font-size: 48px; line-height: 1.2;">Welcome to My Portfolio</h1>
-      <p style="color: var(--text-gray); margin-top: 15px;">ยินดีต้อนรับสู่พอร์ตโฟลิโอออนไลน์ นำเสนอผลงานและกิจกรรมที่ดิฉันได้รับมาค่ะ</p>
-    </div>
-
-    <!-- ใส่รูปใหญ่ตรงกลางหน้าแรก -->
-    <div class="img-box">
-      <img src="CHNY.jpg" alt="Hero Image (หรือใส่ URL รูปตรงนี้ได้)">
-    </div>
-
-    <div class="dark-section">
-      <h2> สิ่งที่เชี่ยวชาญ </h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>การสื่อสารภาษาจีน</h3>
-          <p>สามารถคุยกับคนจีนได้รู้เรื่องและไปแลกเปลี่ยนมา 10 วัน</p>
+        <div class="nav-links">
+            <a href="index.html" class="active">หน้าแรก</a>
+            <a href="about.html">เกี่ยวกับฉัน</a>
+            <a href="works.html">ผลงาน</a>
+            <a href="goal.html">เป้าหมาย</a>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <!-- ปุ่มย้อนกลับ - ถัดไป -->
-    <div class="page-navigation">
-      <a href="#" class="page-btn disabled">← ย้อนกลับ (ไม่มี)</a>
-      <a href="about.html" class="page-btn">ถัดไป: เกี่ยวกับฉัน →</a>
-    </div>
-  </main>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">WELCOME TO MY PORTFOLIO ✿</p>
+
+            <h1>
+                สวัสดีค่ะ<br>
+                <span>นี่คือ Portfolio ของฉัน</span>
+            </h1>
+
+            <p class="description">
+                เว็บไซต์รวบรวมประวัติ การศึกษา ผลงาน
+                และเป้าหมายในการศึกษาต่อของฉัน
+            </p>
+
+            <a href="about.html" class="main-btn">
+                รู้จักฉันมากขึ้น →
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="circle-bg"></div>
+
+            <img src="images/profile.jpg" alt="Profile">
+
+            <div class="floating-card card1">
+                ♡ Student
+            </div>
+
+            <div class="floating-card card2">
+                ✦ Dream Big
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>Made with ♡ for my future</p>
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
