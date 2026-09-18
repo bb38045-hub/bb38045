@@ -1418,3 +1418,158 @@ body {
     }
 
 }
+/* =================================
+   CONTACT
+================================= */
+
+.contact-section {
+
+    margin-top: 70px;
+
+    padding-top: 20px;
+
+    animation: fadeIn 1s ease;
+}
+
+
+.contact-subtitle {
+
+    text-align: center;
+
+    color: #8b9aa7;
+
+    margin-top: -20px;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+}
+
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+
+.contact-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 20px;
+
+    background: rgba(255,255,255,.85);
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 10px 30px rgba(120,160,180,.08);
+
+    border: 1px solid rgba(220,230,240,.6);
+
+    transition: .35s ease;
+}
+
+
+.contact-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 18px 35px rgba(120,160,180,.15);
+
+    background:
+        linear-gradient(
+            135deg,
+            #f2fbff,
+            #fff5f9
+        );
+}
+
+
+.contact-icon {
+
+    min-width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e0f5ff,
+            #ffe4ef
+        );
+
+    border-radius: 15px;
+
+    font-size: 23px;
+}
+
+
+.contact-card span {
+
+    font-size: 12px;
+
+    color: #df9bb6;
+}
+
+
+.contact-card h3 {
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    color: #66879a;
+
+    margin-top: 3px;
+
+    word-break: break-word;
+}
+
+
+/* มือถือ */
+
+@media (max-width: 800px) {
+
+    .contact-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
